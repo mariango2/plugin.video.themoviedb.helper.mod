@@ -188,7 +188,9 @@ class LibraryAdder(LibraryCommonFunctions):
             self.tv._cache.my_history['latest_season'] = try_int(season.number)
 
     def _add_episode(self, episode, folder):
-        self.tv._cache.my_history['episodes'].append(episode.filename)
+        showname = self.tv.details.get('name')
+        filename = validify_filename(f'{showname} S{try_int(episode.season):02d}E{try_int(episode.number):02d}')
+        self.tv._cache.my_history['episodes'].append(filename)
 
         # Skip episodes we added in the past
         if self._log._add('tv', self.tv.tmdb_id, self.tv._cache.is_added_episode(episode.filename), season=episode.season, episode=episode.number):
