@@ -55,7 +55,7 @@ class PathConstructor:
             return f'{base}?{pstr}'
 
         if self.tmdb_type and self.tmdb_id:
-            base = 'plugin://plugin.video.themoviedb.helper/'
+            base = 'plugin://plugin.video.themoviedb.helper.mod/'
             pstr = f'info=details&tmdb_type={self.tmdb_type_path}&tmdb_id={self.tmdb_id}'
             return f'{base}?{pstr}'
 
@@ -211,7 +211,7 @@ class WindowManager(EventLoop):
         if not tmdb_id:
             Dialog().notification('TMDbHelper', get_localized(32310).format(query))
             return
-        return f'plugin://plugin.video.themoviedb.helper/?info=details&tmdb_type={tmdb_type}&tmdb_id={tmdb_id}'
+        return f'plugin://plugin.video.themoviedb.helper.mod/?info=details&tmdb_type={tmdb_type}&tmdb_id={tmdb_id}'
 
     def add_query(self, query, tmdb_type, separator=' / '):
         kodi_log(f'Window Manager [ACTION] add_query {query} {tmdb_type}', 2)

@@ -9,10 +9,10 @@ from tmdbhelper.lib.items.directories.mdblist.lists_custom import ListMDbListCus
 from tmdbhelper.lib.addon.logger import kodi_log
 
 
-STRM_MOVIE = 'plugin://plugin.video.themoviedb.helper/?info=play&tmdb_id={}&tmdb_type=movie&islocal=True'
-STRM_EPISODE = 'plugin://plugin.video.themoviedb.helper/?info=play&tmdb_type=tv&islocal=True&tmdb_id={}&season={}&episode={}'
-BASEDIR_MOVIE = get_setting('movies_library', 'str') or 'special://profile/addon_data/plugin.video.themoviedb.helper/movies/'
-BASEDIR_TV = get_setting('tvshows_library', 'str') or 'special://profile/addon_data/plugin.video.themoviedb.helper/tvshows/'
+STRM_MOVIE = 'plugin://plugin.video.themoviedb.helper.mod/?info=play&tmdb_id={}&tmdb_type=movie&islocal=True'
+STRM_EPISODE = 'plugin://plugin.video.themoviedb.helper.mod/?info=play&tmdb_type=tv&islocal=True&tmdb_id={}&season={}&episode={}'
+BASEDIR_MOVIE = get_setting('movies_library', 'str') or 'special://profile/addon_data/plugin.video.themoviedb.helper.mod/movies/'
+BASEDIR_TV = get_setting('tvshows_library', 'str') or 'special://profile/addon_data/plugin.video.themoviedb.helper.mod/tvshows/'
 NFOFILE_MOVIE = u'movie-tmdbhelper' if get_setting('alternative_nfo') else u'movie'
 NFOFILE_TV = u'tvshow-tmdbhelper' if get_setting('alternative_nfo') else u'tvshow'
 """

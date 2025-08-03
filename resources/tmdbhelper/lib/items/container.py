@@ -47,7 +47,7 @@ class ContainerDirectoryCommon(CommonContainerAPIs):
 
         # plugin:// params configuration
         self.handle = handle  # plugin:// handle
-        self.paramstring = paramstring  # plugin://plugin.video.themoviedb.helper?paramstring
+        self.paramstring = paramstring  # plugin://plugin.video.themoviedb.helper.mod?paramstring
         self.params = kwargs  # paramstring dictionary
         self.parent_params = self.params.copy()  # TODO: CLEANUP
         self.filters = {
@@ -79,7 +79,7 @@ class ContainerDirectoryCommon(CommonContainerAPIs):
     @cached_property
     def context_additions(self):
         if self.context_additions_make_node:
-            return [(get_localized(32496), 'RunScript(plugin.video.themoviedb.helper,make_node)')]
+            return [(get_localized(32496), 'RunScript(plugin.video.themoviedb.helper.mod,make_node)')]
         return []
 
     @cached_property

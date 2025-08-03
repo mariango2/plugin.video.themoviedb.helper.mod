@@ -105,6 +105,6 @@ class AwardsBuilder():
 
 def build_awards(**kwargs):
     data = AwardsBuilder().run()
-    path = 'special://home/addons/plugin.video.themoviedb.helper/resources/jsondata/'
+    path = 'special://home/addons/plugin.video.themoviedb.helper.mod/resources/jsondata/'
     file = 'awards.json'
     dumps_to_file(data, path, file, join_addon_data=False)

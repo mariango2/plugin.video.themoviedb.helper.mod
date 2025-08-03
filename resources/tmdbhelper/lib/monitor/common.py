@@ -33,7 +33,7 @@ class CommonMonitorDetails(CommonContainerAPIs):
 
     def get_awards_data(self):
         try:
-            filepath = validate_join('special://home/addons/plugin.video.themoviedb.helper/resources/jsondata/', 'awards.json')
+            filepath = validate_join('special://home/addons/plugin.video.themoviedb.helper.mod/resources/jsondata/', 'awards.json')
             with xbmcvfs.File(filepath, 'r') as file:
                 return json.load(file)
         except (IOError, json.JSONDecodeError):

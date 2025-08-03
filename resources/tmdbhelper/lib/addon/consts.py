@@ -14,8 +14,8 @@ SQLITE_TRUE = 1
 
 TVDB_DISCLAIMER = 'Information provided by TheTVDB.com. Please consider supporting them. https://thetvdb.com/subscribe'
 
-NODE_BASEDIR = 'special://profile/addon_data/plugin.video.themoviedb.helper/nodes/'
-RUNSCRIPT = 'Runscript(plugin.video.themoviedb.helper,{})'
+NODE_BASEDIR = 'special://profile/addon_data/plugin.video.themoviedb.helper.mod/nodes/'
+RUNSCRIPT = 'Runscript(plugin.video.themoviedb.helper.mod,{})'
 
 LANGUAGES = (
     'ar-AE', 'ar-SA', 'be-BY', 'bg-BG', 'bn-BD', 'ca-ES', 'ch-GU', 'cs-CZ', 'da-DK', 'de-AT', 'de-CH',
@@ -58,10 +58,10 @@ PLAYERS_URLENCODE = (
     'name', 'showname', 'clearname', 'tvshowtitle', 'title', 'thumbnail', 'poster', 'fanart',
     'originaltitle', 'plot', 'cast', 'actors')
 
-PLAYERS_BASEDIR_USER = 'special://profile/addon_data/plugin.video.themoviedb.helper/players/'
-PLAYERS_BASEDIR_SAVE = 'special://profile/addon_data/plugin.video.themoviedb.helper/reconfigured_players/'
-PLAYERS_BASEDIR_BUNDLED = 'special://home/addons/plugin.video.themoviedb.helper/resources/players/'
-PLAYERS_BASEDIR_TEMPLATES = 'special://home/addons/plugin.video.themoviedb.helper/resources/templates/'
+PLAYERS_BASEDIR_USER = 'special://profile/addon_data/plugin.video.themoviedb.helper.mod/players/'
+PLAYERS_BASEDIR_SAVE = 'special://profile/addon_data/plugin.video.themoviedb.helper.mod/reconfigured_players/'
+PLAYERS_BASEDIR_BUNDLED = 'special://home/addons/plugin.video.themoviedb.helper.mod/resources/players/'
+PLAYERS_BASEDIR_TEMPLATES = 'special://home/addons/plugin.video.themoviedb.helper.mod/resources/templates/'
 PLAYERS_PRIORITY = 1000
 PLAYERS_CHOSEN_DEFAULTS_FILENAME = 'player_defaults'
 

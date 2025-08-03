@@ -14,7 +14,7 @@ class PlayerItem:
 
     @cached_property
     def uid(self):
-        if self.plugin_name in ('xbmc.core', 'plugin.video.themoviedb.helper'):
+        if self.plugin_name in ('xbmc.core', 'plugin.video.themoviedb.helper.mod'):
             return self.name
         return self.plugin_name
 
@@ -51,7 +51,7 @@ class PlayerItem:
 class PlayerItemCombined(PlayerItem):
     @cached_property
     def label(self):
-        if self.plugin_name in ('xbmc.core', 'plugin.video.themoviedb.helper'):
+        if self.plugin_name in ('xbmc.core', 'plugin.video.themoviedb.helper.mod'):
             return self.name
         from xbmcaddon import Addon as KodiAddon
         return KodiAddon(self.plugin_name).getAddonInfo('name')
@@ -111,7 +111,7 @@ class PlayerSelectCombined(PlayerSelectStandard):
     def select_from_group(self, group, header=None, detailed=True):
         if len(self.players_generated_list) != 1:
             return super().select(header, detailed)
-        if group.plugin_name != 'plugin.video.themoviedb.helper':
+        if group.plugin_name != 'plugin.video.themoviedb.helper.mod':
             return super().select(header, detailed)
         return self.get_player(group.posx)
 
@@ -149,6 +149,6 @@ class PlayerSelectAdditionalItems:
     def clear_default_player():
         return [{
             'name': get_localized(32311),
-            'plugin_name': 'plugin.video.themoviedb.helper',
+            'plugin_name': 'plugin.video.themoviedb.helper.mod',
             'plugin_icon': f'{ADDONPATH}/resources/icons/other/kodi.png'
         }]

@@ -6,38 +6,38 @@ from tmdbhelper.lib.addon.plugin import get_setting
 
 CONTEXT_MENU_ITEMS = {
     # Browse Lists
-    '$ADDON[plugin.video.themoviedb.helper 32235]': {
-        'command': 'RunScript(plugin.video.themoviedb.helper,related_lists,{})',
+    '$ADDON[plugin.video.themoviedb.helper.mod 32235]': {
+        'command': 'RunScript(plugin.video.themoviedb.helper.mod,related_lists,{})',
         'setting': 'contextmenu_related_lists',
         'episode': {'tmdb_type': 'tv', 'tmdb_id': '{tmdb_id}', 'season': '{season}', 'episode': '{episode}'},
         'other': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'}
     },
     # Trakt Options
-    '$ADDON[plugin.video.themoviedb.helper 32295]': {
-        'command': 'RunScript(plugin.video.themoviedb.helper,sync_trakt,{})',
+    '$ADDON[plugin.video.themoviedb.helper.mod 32295]': {
+        'command': 'RunScript(plugin.video.themoviedb.helper.mod,sync_trakt,{})',
         'setting': 'contextmenu_sync_trakt',
         'season': {'tmdb_type': 'tv', 'tmdb_id': '{tmdb_id}', 'season': '{season}'},
         'episode': {'tmdb_type': 'tv', 'tmdb_id': '{tmdb_id}', 'season': '{season}', 'episode': '{episode}'},
         'other': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'}
     },
     # TMDb User Options
-    '$ADDON[plugin.video.themoviedb.helper 32522]': {
-        'command': 'RunScript(plugin.video.themoviedb.helper,sync_tmdb,{})',
+    '$ADDON[plugin.video.themoviedb.helper.mod 32522]': {
+        'command': 'RunScript(plugin.video.themoviedb.helper.mod,sync_tmdb,{})',
         'setting': 'contextmenu_sync_tmdb',
         'episode': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}', 'season': '{season}', 'episode': '{episode}'},
         'other': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'}
     },
     # Refresh Details
-    '$ADDON[plugin.video.themoviedb.helper 32233]': {
-        'command': 'RunScript(plugin.video.themoviedb.helper,refresh_details,{})',
+    '$ADDON[plugin.video.themoviedb.helper.mod 32233]': {
+        'command': 'RunScript(plugin.video.themoviedb.helper.mod,refresh_details,{})',
         'setting': 'contextmenu_refresh_details',
         'episode': {'tmdb_type': 'tv', 'tmdb_id': '{tmdb_id}', 'season': '{season}', 'episode': '{episode}'},
         'season': {'tmdb_type': 'tv', 'tmdb_id': '{tmdb_id}', 'season': '{season}'},
         'other': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'}
     },
     # Modify Artwork
-    '$ADDON[plugin.video.themoviedb.helper 32118]': {
-        'command': 'RunScript(plugin.video.themoviedb.helper,modify_artwork,{})',
+    '$ADDON[plugin.video.themoviedb.helper.mod 32118]': {
+        'command': 'RunScript(plugin.video.themoviedb.helper.mod,modify_artwork,{})',
         'setting': 'contextmenu_modify_artwork',
         'movie': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'},
         'tvshow': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'},
@@ -46,7 +46,7 @@ CONTEXT_MENU_ITEMS = {
     },
     # Add to Library
     '$LOCALIZE[20444]': {
-        'command': 'RunScript(plugin.video.themoviedb.helper,add_to_library,{})',
+        'command': 'RunScript(plugin.video.themoviedb.helper.mod,add_to_library,{})',
         'setting': 'contextmenu_add_to_library',
         'movie': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'},
         'tvshow': {'tmdb_type': '{tmdb_type}', 'tmdb_id': '{tmdb_id}'},

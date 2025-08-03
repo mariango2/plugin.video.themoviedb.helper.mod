@@ -69,7 +69,7 @@ class PlayerMethods():
         if file.endswith('.strm'):
             from tmdbhelper.lib.files.futils import read_file
             contents = read_file(file)
-            if contents.startswith('plugin://plugin.video.themoviedb.helper'):
+            if contents.startswith('plugin://plugin.video.themoviedb.helper.mod'):
                 return
             return contents
         return file

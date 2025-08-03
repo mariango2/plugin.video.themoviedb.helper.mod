@@ -14,8 +14,8 @@ def play_using(play_using, mode='play', **kwargs):
         if url[-5:] == '.strm':
             url = read_file(url)
         params = {}
-        if url.startswith('plugin://plugin.video.themoviedb.helper/?'):
-            params = parse_paramstring(url.replace('plugin://plugin.video.themoviedb.helper/?', ''))
+        if url.startswith('plugin://plugin.video.themoviedb.helper.mod/?'):
+            params = parse_paramstring(url.replace('plugin://plugin.video.themoviedb.helper.mod/?', ''))
         if params.pop('info', None) == 'play':
             dictionary.update(params)
         if dictionary.get('tmdb_type'):
@@ -60,7 +60,7 @@ def update_players():
         return
     set_setting('players_url', players_url, 'str')
     downloader = Downloader(
-        extract_to='special://profile/addon_data/plugin.video.themoviedb.helper/players',
+        extract_to='special://profile/addon_data/plugin.video.themoviedb.helper.mod/players',
         download_url=players_url)
     downloader.get_extracted_zip()
 
