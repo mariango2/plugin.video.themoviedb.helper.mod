@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.themoviedb.helper"
-version="6.9.20"
-name="TMDb Helper"
-provider-name="jurialmunkey">
+<addon id="plugin.video.themoviedb.helper.mod"
+version="0.0.1"
+name="TMDb Helper (Mod)"
+provider-name="jurialmunkey, mariango2">
 <requires>
   <import addon="xbmc.python" version="3.0.1"/>
   <import addon="script.module.requests" version="2.9.1"/>
@@ -32,8 +32,7 @@ provider-name="jurialmunkey">
   <disclaimer lang="sv_SE">Data tillhandahållen av TMDb TVDb MDbList OMDb FanartTV och Trakt. En del av informationen tillhandahålls av TheTVDB.com. Stöd dem gärna. https://thetvdb.com/subscribe</disclaimer>
   <disclaimer lang="zh_CN">数据由 TMDb、TVDb、MDbList、OMDb、FanartTV 和 Trakt 提供。部分信息由 TheTVDB.com 提供，建议您支持他们。订阅链接：https://thetvdb.com/subscribe</disclaimer>
   <license>GPL-3.0-or-later</license>
-  <website>https://github.com/jurialmunkey/plugin.video.themoviedb.helper</website>
-  <forum>https://forum.kodi.tv/showthread.php?tid=345847</forum>
+  <website>https://github.com/mariango2/plugin.video.themoviedb.helper.mod</website>
   <assets>
     <icon>icon.png</icon>
     <fanart>fanart.jpg</fanart>
